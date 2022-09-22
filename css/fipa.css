@@ -1,0 +1,103 @@
+/* CSS DO BODY, TOPO E RODAPÉ */
+
+/*cor de fundo*/
+body{
+    background-color: rgb(41, 41, 44);
+    padding-top: 130px;
+    padding-bottom: 9vw;
+}
+
+/*menu topo*/
+#menuTopo{
+    background-color: black;
+    padding: 15px;
+}
+
+/*centraliza os ícones verticalmente*/
+.centralizador{
+    display: flex;
+    align-items: center;
+}
+
+/*relógio(superior direito)*/
+#relogio{
+    color: white;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+/*menu rodapé*/
+#menuRodape{
+    background-color: black;
+    padding: 2% 10px;
+    text-align: center
+}
+
+/*botoes sem fundo em svg(menus topo e baixo)*/
+.botaoSemFundo{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/*reduz o padding das divs do menu rodapé quando a resolução é menor que 415px /// a classe nopadding se aplica apenas nesse caso*/
+@media screen and (min-device-width: 1px) and (max-device-width: 750px) {   
+    .nopadding{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}  
+
+/* CSS DO MAIN */
+
+/*icones/setas rádio*/
+.arrowSom{
+    background: transparent;
+    border-color: transparent;
+}
+
+/*texto rádio cultura*/
+#textoRadio{
+    margin-top: 12px;
+    color: black;
+    font-size: 20px;
+}
+
+/*box do rádio*/
+.fundoRadio{
+    margin: 25px 0;
+    padding: 35px 0;
+    background-color: rgb(217, 217, 217);
+    border-radius: 35px;
+    height: 280px;
+}
+
+/*controle de media*/
+p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+/*box bg do Fipa*/
+.fundoFipa{
+    margin: 25px 0;
+    padding: 35px 0;
+    background-color: rgb(217, 217, 217);
+    border-radius: 35px;
+    position: relative;
+}
+
+/*botoes fipa*/
+.botaoFipa{
+    background-color: pink;
+    color: black;
+    border-radius: 35px;
+    padding: 10px;
+    font-size: 20px;
+    min-width: 70%;
+    margin-top: 25px;
+}
+
+.botaoFipa:active{
+    background-color: orangered;
+    font-weight: bold;
+}
